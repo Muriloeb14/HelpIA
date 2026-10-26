@@ -1,0 +1,24 @@
+/* ===== 1. Fundamentos ===== */
+@import url('variables.css');
+@import url('reset.css');
+@import url('base.css');
+@import url('layout.css');
+
+/* ===== 2. Componentes ===== */
+@import url('components/buttons.css');
+@import url('components/cards.css');
+@import url('components/forms.css');
+@import url('components/chat-widget.css');
+
+/* ===== 3. Seções ===== */
+@import url('sections/header.css');
+@import url('sections/hero.css');
+@import url('sections/features.css');
+@import url('sections/channels.css');
+@import url('sections/ai-section.css');
+@import url('sections/cta.css');
+@import url('sections/footer.css');
+
+/* ===== 4. Ajustes finais ===== */
+@import url('animations.css');
+@import url('responsive.css');

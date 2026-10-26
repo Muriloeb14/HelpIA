@@ -1,0 +1,28 @@
+.page-wrapper {
+    width: 1920px;
+    min-height: 1080px;
+    margin: 0 auto;
+    position: relative;
+    background: var(--bg-primary);
+    overflow: hidden;
+}
+
+@media (max-width: 1920px) {
+    .page-wrapper {
+        width: 100%;
+        min-height: auto;
+    }
+}
+
+.grid-background {
+    position: absolute;
+    inset: 0;
+    background-image: 
+        linear-gradient(rgba(88, 166, 255, 0.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(88, 166, 255, 0.04) 1px, transparent 1px);
+    background-size: 60px 60px;
+    pointer-events: none;
+    z-index: 0;
+    mask-image: radial-gradient(ellipse at center, black 30%, transparent 80%);
+    -webkit-mask-image: radial-gradient(ellipse at center, black 30%, transparent 80%);
+}

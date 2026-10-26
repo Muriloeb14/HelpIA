@@ -1,0 +1,221 @@
+.ai-section {
+    padding: 140px 80px;
+    background: var(--bg-secondary);
+    position: relative;
+    overflow: hidden;
+    border-top: 1px solid var(--border-default);
+    border-bottom: 1px solid var(--border-default);
+}
+
+.ai-section::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -10%;
+    width: 700px;
+    height: 700px;
+    background: radial-gradient(circle, rgba(88, 166, 255, 0.12) 0%, transparent 70%);
+    border-radius: 50%;
+    filter: blur(100px);
+}
+
+.ai-section::after {
+    content: '';
+    position: absolute;
+    bottom: -30%;
+    left: -5%;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(163, 113, 247, 0.1) 0%, transparent 70%);
+    border-radius: 50%;
+    filter: blur(100px);
+}
+
+.ai-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+
+.ai-content .section-title {
+    text-align: left;
+    font-size: 52px;
+}
+
+.ai-content .section-description {
+    text-align: left;
+    margin-bottom: 40px;
+}
+
+.ai-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.ai-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    font-size: 16px;
+    color: var(--text-primary);
+}
+
+.ai-list li .check-icon {
+    width: 28px;
+    height: 28px;
+    background: rgba(63, 185, 80, 0.15);
+    color: var(--accent-green);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    border: 1px solid rgba(63, 185, 80, 0.3);
+    box-shadow: 0 0 12px rgba(63, 185, 80, 0.2);
+}
+
+.ai-list li .check-icon svg {
+    width: 14px;
+    height: 14px;
+}
+
+.ai-visual {
+    position: relative;
+}
+
+.ai-mockup {
+    background: var(--bg-primary);
+    border: 1px solid var(--border-default);
+    border-radius: 20px;
+    padding: 24px;
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5), 0 0 40px rgba(88, 166, 255, 0.08);
+}
+
+.mockup-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--border-default);
+    margin-bottom: 20px;
+}
+
+.mockup-dots {
+    display: flex;
+    gap: 6px;
+}
+
+.mockup-dots span {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+.mockup-dots span:nth-child(1) { background: #ff5f57; }
+.mockup-dots span:nth-child(2) { background: #febc2e; }
+.mockup-dots span:nth-child(3) { background: #28c840; }
+
+.mockup-title {
+    color: var(--text-muted);
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.mockup-message {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 16px;
+}
+
+.mockup-message .avatar {
+    width: 36px;
+    height: 36px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.mockup-message .avatar svg {
+    width: 18px;
+    height: 18px;
+}
+
+.mockup-message.bot .avatar {
+    background: rgba(88, 166, 255, 0.15);
+    color: var(--accent-cyan);
+    border: 1px solid rgba(88, 166, 255, 0.25);
+}
+
+.mockup-message.user .avatar {
+    background: var(--bg-tertiary);
+    color: var(--text-primary);
+    border: 1px solid var(--border-default);
+}
+
+.mockup-bubble {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-default);
+    padding: 14px 18px;
+    border-radius: 14px;
+    color: var(--text-primary);
+    font-size: 14px;
+    line-height: 1.5;
+    max-width: 85%;
+}
+
+.mockup-message.user {
+    flex-direction: row-reverse;
+}
+
+.mockup-message.user .mockup-bubble {
+    background: rgba(88, 166, 255, 0.1);
+    border-color: rgba(88, 166, 255, 0.25);
+}
+
+.ai-highlight {
+    background: rgba(163, 113, 247, 0.08);
+    border: 1px solid rgba(163, 113, 247, 0.25);
+    border-radius: 14px;
+    padding: 16px 18px;
+    margin-top: 20px;
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+    box-shadow: 0 0 30px rgba(163, 113, 247, 0.1);
+}
+
+.ai-highlight .highlight-icon {
+    flex-shrink: 0;
+    width: 24px;
+    height: 24px;
+    color: var(--accent-purple);
+}
+
+.ai-highlight .highlight-icon svg {
+    width: 100%;
+    height: 100%;
+}
+
+.ai-highlight .highlight-content h5 {
+    color: var(--accent-purple);
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 6px;
+}
+
+.ai-highlight .highlight-content p {
+    color: var(--text-primary);
+    font-size: 13px;
+    line-height: 1.5;
+}

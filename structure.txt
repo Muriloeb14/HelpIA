@@ -1,0 +1,102 @@
+helpia/
+│
+├── README.md                           # Documentação geral do projeto
+├── .gitignore                          # Arquivos ignorados pelo Git
+│
+├── frontend/                           # 🎨 NOSSO ESCOPO — HTML + CSS + JS
+│   │
+│   ├── index.html                      # Landing page
+│   ├── README.md                       # Docs específicas do frontend
+│   │
+│   ├── css/                            # Estilos organizados por responsabilidade
+│   │   │
+│   │   ├── reset.css                   # Normalização de estilos
+│   │   ├── variables.css               # Variáveis CSS (:root)
+│   │   ├── base.css                    # Estilos globais (body, tipografia, scrollbar)
+│   │   ├── layout.css                  # Container principal, grid de fundo
+│   │   │
+│   │   ├── components/                 # Componentes reutilizáveis
+│   │   │   ├── buttons.css
+│   │   │   ├── cards.css
+│   │   │   ├── forms.css
+│   │   │   └── chat-widget.css
+│   │   │
+│   │   ├── sections/                   # Seções específicas da página
+│   │   │   ├── header.css
+│   │   │   ├── hero.css
+│   │   │   ├── features.css
+│   │   │   ├── channels.css
+│   │   │   ├── ai-section.css
+│   │   │   ├── cta.css
+│   │   │   └── footer.css
+│   │   │
+│   │   ├── animations.css              # Keyframes globais
+│   │   ├── responsive.css              # Media queries
+│   │   └── styles.css                  # 📌 Arquivo principal (importa todos)
+│   │
+│   ├── js/                             # JavaScript modularizado
+│   │   │
+│   │   ├── main.js                     # Ponto de entrada
+│   │   │
+│   │   ├── modules/                    # Módulos funcionais
+│   │   │   ├── typing-effect.js
+│   │   │   ├── scroll-reveal.js
+│   │   │   ├── smooth-scroll.js
+│   │   │   └── helpy-bot.js
+│   │   │
+│   │   ├── data/                       # Dados separados da lógica
+│   │   │   └── helpy-responses.js
+│   │   │
+│   │   └── api/                        # 🆕 Camada de integração com o backend
+│   │       ├── client.js               # Fetch wrapper com URL base + modo mock
+│   │       └── mock/                   # Respostas simuladas (enquanto backend não existe)
+│   │           ├── tickets.json
+│   │           ├── auth.json
+│   │           └── ai.json
+│   │
+│   └── pages/                          # Páginas futuras
+│       ├── login.html
+│       ├── register.html
+│       └── dashboard.html
+│
+│
+├── backend/                            # 🐍 ESCOPO DO COLEGA — Python
+│   │
+│   ├── README.md                       # Docs específicas do backend
+│   ├── requirements.txt                # Dependências Python
+│   ├── .env.example                    # Variáveis de ambiente (modelo)
+│   ├── main.py                         # Ponto de entrada (FastAPI)
+│   │
+│   ├── app/
+│   │   ├── __init__.py
+│   │   ├── config.py                   # Configurações (DB, IA, CORS)
+│   │   ├── routes/                     # Endpoints da API
+│   │   │   ├── __init__.py
+│   │   │   ├── auth.py                 # /api/auth
+│   │   │   ├── tickets.py              # /api/tickets
+│   │   │   ├── channels.py             # /api/channels
+│   │   │   └── ai.py                   # /api/ai
+│   │   ├── models/                     # Modelos de dados (ORM)
+│   │   │   ├── __init__.py
+│   │   │   ├── user.py
+│   │   │   ├── ticket.py
+│   │   │   └── message.py
+│   │   ├── services/                   # Lógica de negócio
+│   │   │   ├── __init__.py
+│   │   │   ├── ai_service.py           # Integração com OpenAI/Gemini
+│   │   │   ├── teams_service.py
+│   │   │   ├── whatsapp_service.py
+│   │   │   └── telegram_service.py
+│   │   └── utils/
+│   │       ├── __init__.py
+│   │       └── security.py
+│   │
+│   └── tests/
+│       ├── __init__.py
+│       └── test_tickets.py
+│
+│
+└── docs/                               # 📚 Documentação compartilhada
+    ├── api-contract.md                 # Contrato da API (endpoints, payloads)
+    ├── architecture.md                 # Diagrama de arquitetura
+    └── database-schema.md              # Esquema do banco

@@ -1,0 +1,44 @@
+@media (max-width: 1400px) {
+    .hero-title { font-size: 96px; }
+    .hero-title .line-1 { font-size: 80px; }
+    .hero-title .line-2 { font-size: 96px; min-height: 100px; height: 100px; line-height: 100px; }
+    .typing-cursor { height: 80px; }
+    .section-title { font-size: 44px; }
+    .cta-title { font-size: 48px; }
+    .features-grid, .channels-grid { grid-template-columns: repeat(2, 1fr); }
+    .ai-container { grid-template-columns: 1fr; gap: 60px; }
+    .ai-content .section-title, .ai-content .section-description { text-align: center; }
+    .logo-image { height: 80px; }
+}
+
+@media (max-width: 768px) {
+    .header { padding: 20px 24px; }
+    .hero { padding: 140px 24px 60px; min-height: auto; }
+    .hero-title { font-size: 48px; letter-spacing: -2px; }
+    .hero-title .line-1 { font-size: 40px; }
+    .hero-title .line-2 { font-size: 48px; min-height: 52px; height: 52px; line-height: 52px; }
+    .typing-cursor { height: 40px; }
+    .hero-subtitle { font-size: 17px; }
+    .content-section, .ai-section, .cta-section { padding: 60px 24px; }
+    .features-grid, .channels-grid { grid-template-columns: 1fr; }
+    .section-title { font-size: 32px; }
+    .cta-title { font-size: 36px; }
+    .footer { padding: 40px 24px 24px; }
+    .footer-content { flex-direction: column; gap: 24px; }
+    .footer-bottom { flex-direction: column; gap: 12px; text-align: center; }
+    .logo-image { height: 60px; }
+    .footer-logo-image { height: 60px; }
+    .helpy-chat-window {
+        width: calc(100vw - 32px);
+        height: 500px;
+        right: 16px;
+        bottom: 120px;
+    }
+    .helpy-bot-button {
+        width: 70px;
+        height: 70px;
+        bottom: 20px;
+        right: 20px;
+    }
+    .footer-credits { text-align: center; }
+}
